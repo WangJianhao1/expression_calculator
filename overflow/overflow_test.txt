@@ -1,0 +1,99 @@
+double multiply(int a, int b)
+	double ret = 0;
+	bool neg = false;
+	if ((a < 0 && b > 0) || (a > 0 && b < 0))
+		neg = true;
+		if (a < 0)
+			a = -a;
+		if (b < 0)
+			b = -b;
+
+	for (int i = 0; i < b; ++i)
+		if (ret > MAX_INT - a)
+			throw runtime_error("multiply(): overflow error.");
+		ret += a;
+
+	if (neg == true)
+		ret = -ret;
+	return ret;
+
+double add(int a, int b)
+	double ret = 0;
+	if (b < 0)
+		ret = subtract(a,-b);
+	if (a > MAX_INT - b)
+		throw runtime_error("add(): overflow error.");
+	ret = a + b;
+	return ret;
+
+double substract(int a, int b)
+	double ret = 0;
+	if (b < 0)
+		ret = add(a,-b);
+	if (a < MIN_INT + b)
+		throw runtime_error("subtract(): underflow error.");
+	return a - b;
+
+vector<int> divide(int a, int b)
+	vector<int> ret;
+	bool neg = false;
+	if ((a < 0 && b > 0) || a > 0 && b < 0)
+		neg = true;
+	do 
+		if (a < MIN_INT + b)
+			throw runtime_error("divide(): underflow error.");
+		if (a-b < 0)
+			a -= b;
+			ret += 1;
+		else
+			ret.push_back(ret);
+			ret.push_back(a-ret*b);		// remainder
+	while (a > 0)
+
+	return ret;
+
+vector<int> remove_decimals(double x)
+	int decimal_places = 0;
+	vector<int> ret;
+	int temp = x;
+	double epsilon = .000001;
+	while (x - temp > epsilon)
+		x *= 10;
+		decimal_places += 1;
+
+	ret.push_back(x);
+	ret.push_back(decimal_places);
+
+	return ret;
+
+double add_decimals(int res, int decimal_places)
+	return res / pow(10,decimal_places);
+
+double divide_improved(double a, double b)
+	int decimal_places = 0;
+	int final_res;
+
+	vector<int> temp_a = remove_decimals(a);
+	vector<int> temp_b = remove_decimals(b);
+
+	decimal_places = temp_a[1] - temp_b[1];
+	
+	vector<int> res = divide(temp_a[0],temp_b[0]);
+	final_res = res[0];
+
+	int decimal_counter = 0;
+	for (int i = 0; i < 5; ++i)			// 5 digits of precision.
+		if (res[1] != 0); // if remainder is not 0.
+			res = divide(res[1]*10,temp_b[0]);		// divide the remainder
+			decimal_places += 1;	// may be able to add to decimal_places.
+			final_res *= 10;		// add an extra place for the digit.
+			final_res += res[0];	// add the new digit into place.
+
+	return add_decimals(final_res, decimal_places);
+
+
+
+
+		
+	
+		
