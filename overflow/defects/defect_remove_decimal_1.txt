@@ -1,0 +1,8 @@
+Test cases (7-10)
+
+Results of the remove_decimal function are truncated after 15 digits of precision.
+If the input double has more than 15 digits, throw an error stating that the 
+entered number has too many digits.
+
+Solution:
+	Create a decimal class that replaces the double type.	
