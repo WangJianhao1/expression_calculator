@@ -1,0 +1,8 @@
+Task:
+	Make sure the remove_decimals.cpp file is up to date with the respective
+	function. Unit test this function.
+
+Solution:
+	Copy and paste from the most up to date files the remove_decimals function 
+	and all of its dependencies. Create tests using the harness created and 
+	available in the member_functions folder.

@@ -1,0 +1,7 @@
+Task:
+	Update the add_decimals.cpp file with up to date functions from the latest
+	files. Create unit tests for this function. 
+
+Solution:
+	Copy and paste latest function definitions into this file. Create unit 
+	tests using the test harness available in the test_framework.
