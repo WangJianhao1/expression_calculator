@@ -9,9 +9,9 @@ Operations to move:
 
 Unit tests to update:
 	Divide with precision [x]
-	sci_to_d			
-	remove_decimal
-	add_decimal
+	sci_to_d [x]			
+	remove_decimal [x]
+	add_decimal [x]
 
 The divide and multiply with precision will share some subroutines. 
 Create a seperate header cpp file pair for these and include as
