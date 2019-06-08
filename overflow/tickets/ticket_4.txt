@@ -2,4 +2,18 @@ Task:
 	Move overflow operations into a header and cpp file pair. Update
 	the unit tests to have an include directive for these functions.
 
+Operations to move:
+	Divide with precision [x]
+	Add, subtract
+	Multiply with precision
+
+Unit tests to update:
+	Divide with precision [x]
+	sci_to_d			
+	remove_decimal
+	add_decimal
+
+The divide and multiply with precision will share some subroutines. 
+Create a seperate header cpp file pair for these and include as
+necessary.
 
