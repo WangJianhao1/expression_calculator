@@ -1,0 +1,9 @@
+Task:
+	Edit the test harness to have up to date includes and using statements.
+
+Solution:
+	Update the test harness and test that each of the Macros has the 
+	necessary includes by running tests with a unit test file.
+
+
+
