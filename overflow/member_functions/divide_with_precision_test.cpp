@@ -1,12 +1,8 @@
 #include "divide_with_precision.h"
 #include "test_framework.h"
 #include <string>
-#include <iostream>
-#include <stdexcept>
 
-using std::cout;	using std::endl;
-using std::string;	using std::cin;
-using std::exception;
+using std::string;
 
 int main()
 {

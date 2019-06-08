@@ -1,5 +1,11 @@
 #include <vector>
 #include <string>
+#include <iostream>
+#include <stdexcept>
+
+using std::cout;	using std::endl;
+using std::string;	using std::cin;
+using std::exception;
 
 int tests_run = 0;
 int tests_passed = 0;
