@@ -1,0 +1,13 @@
+Task:
+	Reorganize the project file structure to the following:
+		src
+			overflow_operators
+		headers
+		unit_tests
+		misc
+		tickets
+			defects
+			completed
+
+
+		All files should belong to one of these folders.
