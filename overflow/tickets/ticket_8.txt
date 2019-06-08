@@ -1,0 +1,3 @@
+Task:
+	Figure out how to organize all header files into one folder that will
+	be looked into for #include directives at compile time.
