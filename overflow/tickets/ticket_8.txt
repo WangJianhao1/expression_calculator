@@ -1,3 +1,6 @@
 Task:
 	Figure out how to organize all header files into one folder that will
 	be looked into for #include directives at compile time.
+
+Resource:
+https://stackoverflow.com/questions/15478005/how-to-tell-g-compiler-where-to-search-for-inc
