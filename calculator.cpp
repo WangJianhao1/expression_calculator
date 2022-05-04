@@ -205,7 +205,6 @@ double primary()
 	{	double d = expression();
 		t = ts.get();
 		if (t.kind != ')') error("')' expected");
-		//added below line
 		return d;
 	}
 	case sq:
